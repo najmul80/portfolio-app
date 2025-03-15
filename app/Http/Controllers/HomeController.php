@@ -10,7 +10,7 @@ class HomeController extends Controller
     
     public function index()
     {
-        $user = User::where('email','satner@gmail.com')->first();
+        $user = User::where('id',1)->first();
         return view('home',['user'=>$user]);
     }
 
